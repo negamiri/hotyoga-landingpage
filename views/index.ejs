@@ -6,14 +6,13 @@
 
   <title>Hot Yoga 101</title>
   <link rel="stylesheet" href="/styles/layout.css" />
-  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/homepage.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  
-  <script type="text/javascript" src="/scripts/homepage.js"></script>
 
   <% include partial/navbar.ejs %>
   <% include partial/footer.ejs %>
+  <% include partial/modal.ejs %>
 </head>
 
 <body>
@@ -22,40 +21,16 @@
     <h4>(besides water)</h4>
   </div>
 
-  <div class="benefits hidden" id="benefits">
-    <h2>Benefits of heat</h2>
-    <div class="card-gallery">
-      <div class="card">
-        <h3>💪🏼</h3>
-        <h4>Muscles</h4>
-        <p>Achieve greater flexibility and ease getting into the postures.</p>
-      </div>
-
-      <div class="card">
-        <h3>❤️</h3>
-        <h4>Heart and lungs</h4>
-        <p>Your heart will beat faster creating the same effect as any aerobic exercise, which makes your body burn fat more effectively.</p>
-      </div>
-      
-      <div class="card">
-        <h3>🧖🏻‍♀️</h3>
-        <h4>Skin</h4>
-        <p>Your pores and capillaries dilate, which oxygenates your body from the inside out, which flushes out toxins and waste products.</p>
-      </div>
-
-      <div class="card">
-        <h3>🤤</h3>
-        <h4>Metabolism</h4>
-        <p>Your metabolism speeds up, which helps breakdown glucose and fatty acids. The increased metabolism improves your digestive system.</p>
-      </div>
-
-      <div class="card">
-        <h3>😰</h3>
-        <h4>Nervous system</h4>
-        <p>Helps your nervous system function better. Messages are also carried more effectively to and from your brain!</p>
-      </div>
-
-    </div>
+  <div class="benefits">
+    <% include partial/benefits_of_heat.ejs %>
   </div>
+
+  <div class="get-started">
+    <% include partial/get_started.ejs %>
+  </div>
+
 </body>
 </html>
+
+<script type="text/javascript" src="/scripts/homepage.js"></script>
+<script type="text/javascript" src="/scripts/modal.js"></script>
