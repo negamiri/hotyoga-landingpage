@@ -7,28 +7,31 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-image: url('../assets/intro-background.jpg');
+  background-image: url('/assets/intro-background.jpg');
   background-repeat: no-repeat;
   background-size: fill;
   background-position: center;
   background-size: cover;
 }
 
-.intro h1 {
-  font-size: 3em;
-  width: 8em;
-  text-align: left;
-  margin-left: 1.7em;
-  font-weight: 500;
-}
+.intro {
+  h1 {
+    font-size: 3em;
+    width: 8em;
+    text-align: left;
+    margin-left: 1.7em;
+    font-weight: 500;
+  }
 
-.intro h4 {
-  font-size: 2em;
-  text-align: left;
-  margin-left: 4em;
-  margin-top: -0.6em;
-  font-weight: 500;
-}
+  h4 {
+    font-size: 2em;
+    text-align: left;
+    margin-left: 4em;
+    margin-top: -0.6em;
+    font-weight: 500;
+  }
+
+} 
 
 .benefits {
   height: 100vh;
@@ -39,58 +42,63 @@
   align-items: center;
 }
 
-.benefits h2 {
-  font-size: 3em;
-  padding-top: 2em;
-}
+.benefits {
 
-.card-gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  h2 {
+    font-size: 3em;
+    padding-top: 2em;
+  }
 
-.card {
-  width: 14em;
-  text-align: center;
-  color: $secondary-color;
-  background-color: white;
-  margin: 1em;
-  border-radius: 1em;
-  opacity: 0.7;
-  transform: translateY(50%) scale(0.95);
-}
+  .card-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-.card:hover {
-  opacity: 1;
-}
+  .card {
+    width: 14em;
+    text-align: center;
+    color: $secondary-color;
+    background-color: white;
+    margin: 1em;
+    border-radius: 1em;
+    opacity: 0.7;
+    transform: translateY(50%) scale(0.95);
+  }
 
-.card h3 {
-  font-size: 3em;
-}
+  .card:hover {
+    opacity: 1;
+  }
+  
+  .card {
+    h3 {
+      font-size: 3em;
+    }
 
-.card h4 {
-  margin-top: -2em;
-}
+    h4 {
+      margin-top: -2em;
+    }
 
-.card p {
-  padding: 1em;
-  margin-top: -1em;
-}
+    p {
+      padding: 1em;
+      margin-top: -1em;
+    }
 
-.card-active {
-  opacity: 0.7;
-  transition: all 1s;
-  transform: translateY(0%) scale(1);
-}
+  } 
+  
+  .card-active {
+    opacity: 0.7;
+    transition: all 1s;
+    transform: translateY(0%) scale(1);
+  }
+  
+  .card-inactive {
+    opacity: 0;
+    transition: all .5s;
+  }
 
-.card-inactive {
-  opacity: 0;
-  transition: all .5s;
-}
+} 
 
-
-// Get started div
 .get-started {
   height: 100vh;
   background-color: $secondary-color;
@@ -101,60 +109,62 @@
   padding-left: 3em;
 }
 
-.get-started .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.get-started {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.get-started h2 {  
-  font-weight: 500;
-  font-size: 3em;
-  padding-top: 2em;
-}
+  h2 {  
+    font-weight: 500;
+    font-size: 3em;
+    padding-top: 2em;
+  }
 
-.get-started h4 {
-  font-weight: 500;
-  font-size: 2em;
-}
+  h4 {
+    font-weight: 500;
+    font-size: 2em;
+  }
 
-.register-button {
-  text-decoration: none;
-  background-color: $primary-color;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  width: 5em;
-  font-size: 1.8em;
-  color: white;
-  text-align: center;
-}
+  .register-button {
+    text-decoration: none;
+    background-color: $primary-color;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 5em;
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+  }
 
-.get-started-btn {
-  display: flex;
-}
+  .get-started-btn {
+    display: flex;
+  }
 
-.get-started-btn a {
-  text-decoration: none;
-  background-color: $primary-color;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  width: 8em;
-  font-size: 1.5em;
-  color: white;
-  text-align: center;
-  margin-right: 1em;
-  margin-left: 1em;
-}
+  .get-started-btn a {
+    text-decoration: none;
+    background-color: $primary-color;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 8em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
 
-.get-started .image {
-  display: flex;
-  justify-content: right;
-  width: 55vw;
-  height: 100vh;
-  overflow: hidden;
-}
+  .image {
+    display: flex;
+    justify-content: right;
+    width: 55vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-.get-started img {
-  width: 100%;
-  height: 100%;
-}
+  img {
+    width: 100%;
+    height: 100%;
+  }
+} 
