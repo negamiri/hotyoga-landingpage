@@ -1,0 +1,96 @@
+@import "variables.scss"; 
+
+.intro {
+  height: 100vh;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url('../assets/intro-background.jpg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro h1 {
+  font-size: 3em;
+  width: 8em;
+  text-align: left;
+  margin-left: 1.7em;
+  font-weight: 500;
+}
+
+.intro h4 {
+  font-size: 2em;
+  text-align: left;
+  margin-left: 4em;
+  margin-top: -0.6em;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.benefits {
+  height: 100vh;
+  background-color: $primary-color;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits h2 {
+  font-size: 3em;
+  padding-top: 2em;
+}
+
+.card-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 14em;
+  text-align: center;
+  color: $secondary-color;
+  background-color: white;
+  margin: 1em;
+  border-radius: 1em;
+  opacity: 0.7;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card h3 {
+  font-size: 3em;
+}
+
+.card h4 {
+  margin-top: -2em;
+}
+
+.card p {
+  padding: 1em;
+  margin-top: -1em;
+}
+
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+
+.benefits {
+  animation: fade-in 1.4s;
+}
+
+// .hidden {
+//   opacity: 0;
+// }

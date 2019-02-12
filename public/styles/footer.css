@@ -1,0 +1,34 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  background-color: #333333;
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 400; }
+
+footer .left {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10em; }
+
+footer .left p {
+  margin-top: 0.8em;
+  margin-bottom: 0;
+  font-size: 0.9em; }
+
+footer .right {
+  display: flex;
+  justify-content: space-between;
+  width: 4em;
+  font-size: 1.4em; }
+
+.right a {
+  color: white;
+  text-decoration: none; }
+
+/*# sourceMappingURL=footer.css.map */
